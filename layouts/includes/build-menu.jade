@@ -19,11 +19,11 @@ aside.sidebar
             li: a(href="/references/desktop-app" class=document.url === 'references/desktop-app'? "current" : "") PhoneGap Desktop
             li: a(href="/references/developer-app" class=document.url === 'references/developer-app' ? "current" : "") PhoneGap Developer
             li: a(href="/references/phonegap-cli" class=document.url === 'references/phonegap-cli' ? "current" : "") PhoneGap CLI
-               - var subPages = [{title:"Installing the CLI", url:"references/phonegap-cli/install"},{title:"Help Commands", url:"references/phonegap-cli/help"},{title:"Creating an App", url:"references/phonegap-cli/create"},{title:"Serving an App", url:"references/phonegap-cli/serve"},{title:"Using Templates", url:"references/phonegap-cli/templates"},{title:"Use with PhoneGap Build", url:"references/phonegap-cli/remote-usage"},{title:"Cordova Commands", url:"references/phonegap-cli/cordova"},{title:"Updating the CLI Version", url:"references/phonegap-cli/update"}]
+            li: a(href="/references/phonegap-build" class=document.url === 'references/phonegap-build' ? "current" : "") PhoneGap Build
+               - var subPages = [{title:"What is Build?", url:"references/phonegap-build/what-is-build"}]
                ul
                   each page in subPages
                      li: a(href="/#{page.url}" class=document.url === page.url ? "current" : "")!=page.title
-            li: a(href="/references/phonegap-build" class=document.url === 'references/phonegap-build' ? "current" : "") PhoneGap Build
 
 
 
